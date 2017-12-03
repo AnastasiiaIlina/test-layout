@@ -1,0 +1,303 @@
+@import url('https://fonts.googleapis.com/css?family=PT+Sans+Narrow:700');
+
+* {
+	box-sizing: border-box;
+}
+
+.wrapper {
+	width: 80%;
+	margin:0 auto 20px auto;
+}
+
+body {
+	max-width: 1440px;
+	margin: 0 auto;
+}
+
+a {
+	text-decoration:none;
+}
+
+.logo {
+	margin: 17px 12% 17px 10%;
+}
+
+.control-panel {
+	box-shadow: 0px 1px 8px #e1e1e1;
+	font-family: 'PT Sans Narrow', sans-serif;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.control-panel a {
+	color:#9297a3;
+}
+
+.control-panel a:hover {
+	color:#333743;
+}
+
+nav {
+	width: 40%;
+	display: flex;
+	align-items: center;
+	font-size: 11px;
+}
+
+nav a {
+	margin-right: 10%;
+	text-transform: uppercase;
+}
+
+.bag-autorization {
+	width: 20%;
+	display: flex;
+	align-items: center;
+	justify-content: flex-end;
+}
+
+.bag {
+	font-size: 13px;
+	margin-right: 7%;
+}
+
+.bag_numbers {
+	background-color: #000;
+	border-radius: 50%;
+	padding: 1px 6px 1px 5px;
+	margin: 0 4px;
+	text-align: center;
+	color:#fff;
+}
+
+.vertical-line {
+	width: 1px;
+	background-color: #000;
+}
+
+.autorization {
+	width: 50%;
+	display: flex;
+	justify-content: space-around;
+	border-left: 1px solid #dedede;
+	padding: 26px 10px;
+	font-size: 13px;
+}
+
+.good {
+	display: grid;
+	margin: 4% 0 9% 0;
+	grid-template-columns: 1fr 1fr;
+	grid-auto-rows: minmax(100px, auto);
+}
+
+.good div, .good-description {
+	grid-column-gap: 15px;
+}
+
+.good-photo {
+	display: grid;
+	grid-template-columns: 1fr 3fr;
+}
+
+.adaptive {
+	width: 96%;
+	float: right;
+}
+
+.adaptive img {
+	width: 100%;
+	height: auto;
+}
+
+/*good description*/
+
+.good-description {
+	text-align: center;
+	margin-left: 3%;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.men-clothes {
+	color:#9fcede;
+	font-family: Georgia, sans-serif;
+	font-size:12px;
+}
+
+.men-clothes a {
+	color:#9fcede;
+}
+
+.good-description h1 {
+	font-family: 'PT Sans Narrow', sans-serif;
+	font-size: 24px;
+	margin: 0;
+}
+
+.good-description .price {
+	font-family: Georgia, sans-serif;
+	font-size: 22px;
+	margin: 0;
+}
+
+.good-description .descript {
+	font-family: 'PT Sans Narrow', sans-serif;
+	font-size: 13px;
+	border-bottom: 1px solid #dbdee5;
+	padding-bottom: 5px;
+}
+
+.good-description .article {
+	font-family: Georgia, sans-serif;
+	font-size: 12px;
+	color:#9297a3;
+	line-height: 16px;
+}
+
+.make-choice {
+	text-align: left;
+}
+
+.make-choice .square {
+	width: 10px;
+	height: 10px;
+	display: inline-block;
+	margin-bottom: 2px;
+}
+
+.blue .square {
+	background-color: #9fcede;
+	margin: 0 6px;
+}
+
+.brown .square {
+	background-color: #333743;
+	margin: 0 6px;
+}
+
+.blue, .brown {
+	font-family: Georgia, sans-serif;
+	font-size: 13px;
+	color:#9297a3;
+}
+
+.colors {
+	width: 30%;
+	padding-bottom: 2px;
+	border-bottom: 1px solid #dbdee5;
+}
+
+.btn {
+	width: 100%;
+	height: 45px;
+	font-family: Georgia, sans-serif;
+	font-size: 13px;
+	border:none;
+	border-radius: 4px;
+	background-color: #afa394;
+	color:#fff;
+	margin-top: 5%;
+	cursor: pointer;
+}
+
+.btn:hover {
+	background-color: #9f9487;
+}
+
+.gallery {
+	text-align: center;
+}
+
+.gallery-photos {
+	display: flex;
+	justify-content: space-between;
+
+}
+
+.gallery-photos h3, .gallery-photo p {
+	text-align: left;
+}
+
+.gallery span {
+	float: right;
+	margin-top: 3%;
+}
+
+.gallery-photo {
+	width: 18%;
+}
+
+.gallery-photo h3{
+	margin-top: 3%;
+	margin-bottom: 0;
+}
+
+.gallery-photo a {
+	color:#000;
+}
+
+.gallery-photo p {
+	margin-top: 3px;
+	margin-bottom: 0;
+}
+
+.gallery-photo img {
+	width: 100%;
+	height: auto;
+}
+
+.gallery-text, .gallery-photo p, .gallery span {
+	font-family: Georgia, sans-serif;
+	font-size: 11px;
+	color:#9297a3;
+}
+
+.gallery h3 {
+	font-family: 'PT Sans Narrow', sans-serif;
+	font-size: 16px;
+}
+
+@media all and (max-width:900px) {
+	.bag_numbers,.sign-up, .vertical-line  {
+		display: none;
+	}
+
+	.autorization {
+		width: auto;
+	}
+}
+
+@media all and (min-width: 601px) {
+	 .mobile {
+		display: none;
+	}
+
+}
+
+@media all and (max-width: 600px) {
+	.gallery-photos {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		grid-gap: 10px;
+
+	}
+
+	.gallery-photo {
+		width: 96%;
+	}
+
+	.good-photo {
+		display: none;
+	}
+
+	.good {
+		grid-template-columns: 1fr;
+	}
+
+	.mobile {
+		display: grid;
+	}
+}
